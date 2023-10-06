@@ -51,7 +51,7 @@ else:
 	max_age=DATA_RECORD_RATE * TRACK_MAX_AGE
 	if max_age > 30:
 		max_age = 30
-model_filename = '/Users/shivang.kumar/Crowd-Analysis/model_data/mars-small128.pb'
+model_filename = './model_data/mars-small128.pb'
 encoder = gdet.create_box_encoder(model_filename, batch_size=1)
 metric = nn_matching.NearestNeighborDistanceMetric("cosine", max_cosine_distance, nn_budget)
 tracker = Tracker(metric, max_age=max_age)
