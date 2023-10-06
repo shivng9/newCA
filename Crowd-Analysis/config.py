@@ -2,7 +2,7 @@ import datetime
 
 # Video Path
 VIDEO_CONFIG = {
-	"VIDEO_CAP" : "/Users/shivang.kumar/Crowd-Analysis/fight_0014.mpeg",
+	"VIDEO_CAP" : "rtsp://0.tcp.in.ngrok.io:12864/mystream",
 	"IS_CAM" : False,
 	"CAM_APPROX_FPS": 3,
 	"HIGH_CAM": False,
@@ -11,8 +11,8 @@ VIDEO_CONFIG = {
 
 # Load YOLOv3-tiny weights and config
 YOLO_CONFIG = {
-	"WEIGHTS_PATH" : "/Users/shivang.kumar/Crowd-Analysis/YOLOv4-tiny/yolov4-tiny.weights",
-	"CONFIG_PATH" : "/Users/shivang.kumar/Crowd-Analysis/YOLOv4-tiny/yolov4-tiny.cfg"
+	"WEIGHTS_PATH" : "./YOLOv4-tiny/yolov4-tiny.weights",
+	"CONFIG_PATH" : "./YOLOv4-tiny/yolov4-tiny.cfg"
 }
 # Show individuals detected
 SHOW_PROCESSING_OUTPUT = True
